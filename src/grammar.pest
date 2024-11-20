@@ -1,0 +1,11 @@
+conversion = { number ~ " " ~ unit }
+
+number = @{ ("+" | "-")? ~ ('0'..'9')+ ~ ("." ~ ('0'..'9')+)? }
+
+unit = { "miles" | "feet" | "inches" | "km" | "m" | "cm" }
+
+decimal_number = @{ ('0'..'9')+ ~ "." ~ ('0'..'9')+ }
+
+signed_number = @{ ("+" | "-")? ~ ('0'..'9')+ }
+
+whitespace = _{ " " | "\t" | "\n" | "\r" }
