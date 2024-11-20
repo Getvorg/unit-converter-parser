@@ -28,5 +28,5 @@ Usage
 
 To run the program, simply execute it with the unit measurement as an argument. For example:
 
-$ cargo run "10 miles" 10 miles = 16.0934 km
+cargo run "10 miles" 10 miles = 16.0934 km
 
